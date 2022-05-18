@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style/feedback_style.css" />
+  <meta http-equiv="Content-type" content="text/html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Обратная связь</title>
+</head>
+
+<body>
+  <header>
+    <div class="container ">
+      <div class="header_body flex">
+        <div class="logo">
+          <img src="img/logo.PNG" alt="" />
+        </div>
+
+        <div class="header_burger">
+          <span></span>
+        </div>
+
+        <div class="menu">
+          <ul class="menu-top">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about_us.html">О нас</a></li>
+            <li><a href="log_in_account.html">Личный кабинет</a></li>
+            <li><a href="feedback.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <section class="feedback">
+      <div class="container">
+        <p class="text">У вас есть вопросы? Заполните форму ниже и получите ответ в течение 24 часов.</p>
+        <form action="#" name="new_form" method="post">
+          <div class="form_inputs">
+            <div>
+              <p>Имя<span class="red">*</p></span><input type="text" required pattern="[А-Яа-яЁё]{4,}">
+            </div>
+            <div>
+              <p>Фамилия<span class="red">*</span></p><input type="text" required pattern="[А-Яа-яЁё]{4,}">
+            </div>
+          </div>
+          <p>E-mail<span class="red">*</span></p>
+          <input type="email" required>
+          <p>Тема сообщения</p>
+          <input type="text">
+          <p>Сообщение<span class="red">*</span></p>
+          <textarea name="text" required></textarea>
+          <div class="button_block">
+            <input type="submit" value="Отправить">
+          </div>
+        </form>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <div class="container flex">
+      <span>2021г. ЖКХ Тольятти</span>
+      <div class="flex">
+        <span>pochta@gmail.com</span>
+        <div class="social_img">
+          <a href="http://facebook.com.vn/" target="_blank"><img src="img/fb.png" alt="" style="max-width: 36px;"></a>
+          <a href="https://investor.twitterinc.com/home/default.aspx" target="_blank"><img src="img/twitter.png" alt=""
+              style="max-width: 36px;"></a>
+          <a href="https://vk.com" target="_blank"><img src="img/vk.png" alt="" style="max-width: 53px;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

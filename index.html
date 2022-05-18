@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style/style.css" />
+  <meta http-equiv="Content-type" content="text/html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная</title>
+</head>
+
+<body>
+  <header>
+    <div class="container ">
+      <div class="header_body flex">
+        <div class="logo">
+          <img src="img/logo.png" alt="" />
+        </div>
+
+        <div class="header_burger">
+          <span></span>
+        </div>
+
+        <div class="menu">
+          <ul class="menu-top">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about_us.html">О нас</a></li>
+            <li><a href="log_in_account.html">Личный кабинет</a></li>
+            <li><a href="feedback.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="content">
+    <section class="news">
+      <h2>Последние новости</h2>
+      <div class="container">
+        <div class="all_news flex_wrap">
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti1.jpg" alt="">
+            </div>
+            <div class="test"><span>В Тольятти будут проводиться съёмки фильма...</span>
+              <a href="https://tolyatti.bezformata.com/listnews/tolyatti-prohodyat-syomki-hudozhestvennogo/98422110/"
+                target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti2.jpg" alt="">
+            </div>
+            <div class="test"><span>В Самарской области ожидается похолодание...</span>
+              <a href="https://yandex.ru/news/story/VSamarskoj_oblasti_mozhet_pokholodat_dominus_2_gradusov--1be86705a03e4ed2793df293731c758e?lang=ru&persistent_id=195104305&rubric=society&stid=NauzXtHDPtW2&story=29145ab3-1386-5df5-98c1-715b00512597&wan=1"
+                target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti3.jpg" alt="">
+            </div>
+            <div class="test"><span>В Тольятти будут судить опера, вымогавшего...</span>
+              <a href="https://www.tltgorod.ru/news/theme-29/news-120675/" target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti5.jpg" alt="">
+            </div>
+            <div class="test"><span>АВТОВАЗу планируют передать парковки...</span>
+              <a href="https://tolyatti.bezformata.com/listnews/avtovazu-predlozhat-soderzhat-parkovki/100702560/"
+                target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti4.jpg" alt="">
+            </div>
+            <div class="test"><span>Бешенные собаки бегают на территории...</span>
+              <a href="http://vstrg.info/novosti/situaciya-s-bezdomnymi-zhivotnymi-v-tolyatti-dostigla-apogeya.html"
+                target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+          <div class="news_block">
+            <div class="img_news">
+              <img src="img/novosti6.jpg" alt="">
+            </div>
+            <div class="test"><span>Заболеваемость COVID-19 в Самарской области</span>
+              <a href="https://ncov.blog/countries/ru/63/" target="_blank">Узнать подробнее...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="covid">
+      <h2>Рекомендации о мерах безопасности COVID-19</h2>
+      <div class="container">
+        <div class="slider_block">
+          <div class="slider">
+            <button class="button slider_prev"><img src="img/back_arrow_5821.png" alt=""></button>
+            <div class="slider_line">
+              <img src="img/covid1.jpg" alt="">
+              <img src="img/covid2.jpg" alt="">
+              <img src="img/covid3.jpg" alt="">
+              <img src="img/covid4.jpg" alt="">
+              <img src="img/covid5.jpg" alt="">
+              <img src="img/covid6.jpg" alt="">
+            </div>
+            <button class="button slider_next"><img src="img/forwardarrow_haciaadelante_4836.png" alt=""></button>
+          </div>
+        </div>
+        <a href="https://gogov.ru/covid-19/world" target="_blank">Узнать мировую статистику заболеваемости COVID-19</a>
+      </div>
+    </section>
+    <section class="useful_info">
+      <!-- popup img -->
+      <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">
+          &times;
+        </span>
+        <img class="modal-content" id="img01" draggable="false">
+      </div>
+      <!-- ******** -->
+      <h2>Полезная информация</h2>
+      <div class="container flex_wrap">
+        <div class="info_img">
+          <img src="img/polezno1.jpg" alt="" id="img">
+        </div>
+        <div class="info_img"><img id="img" src="img/polezno2.jpg" alt=""></div>
+        <div class="info_img"><img id="img" src="img/polezno3.jpg" alt=""></div>
+        <div class="info_img"><img id="img" src="img/polezno4.jpg" alt=""></div>
+        <div class="info_img"><img id="img" src="img/polezno5.jpg" alt=""></div>
+        <div class="info_img"><img id="img" src="img/polezno6.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="links">
+      <div class="container">
+        <div class="all_links flex">
+          <div class="useful_links">
+            <h2>Полезные ссылки</h2>
+            <ul>
+              <li><a href="https://www.gosuslugi.ru/" target="_blank">Государственные услуги</a></li>
+              <li><a href="https://mintrans.gov.ru/" target="_blank">Минтранс</a></li>
+              <li><a href="https://mil.ru/" target="_blank">Минобороны</a></li>
+              <li><a href="https://minobrnauki.gov.ru/" target="_blank">Минобрнауки России</a></li>
+              <li><a href="https://rkn.gov.ru/" target="_blank">Роскомнадзор</a></li>
+            </ul>
+          </div>
+          <div class="legislation">
+            <h2>Законодательство</h2>
+            <ul>
+              <li><a href="http://pravo.gov.ru/proxy/ips/?docbody=&nd=102090645" target="_blank">Жилищный кодекс РФ</a>
+              </li>
+              <li><a href="https://base.garant.ru/70700450/" target="_blank">Федеральный закон от 21.07.2014
+                  №209-ФЗ "О государственной информационной
+                  системе жилищно-коммунального хозяйства"</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+  <footer>
+    <div class="container flex">
+      <span>2021г. ЖКХ Тольятти</span>
+      <div class="flex">
+        <span>pochta@gmail.com</span>
+        <div class="social_img">
+          <a href="http://facebook.com.vn/" target="_blank"><img src="img/fb.png" alt="" style="max-width: 36px;"></a>
+          <a href="https://investor.twitterinc.com/home/default.aspx" target="_blank"><img src="img/twitter.png" alt=""
+              style="max-width: 36px;"></a>
+          <a href="https://vk.com" target="_blank"><img src="img/vk.png" alt="" style="max-width: 53px;"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="js/js.js"></script>
+</body>
+
+</html>
